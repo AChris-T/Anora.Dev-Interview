@@ -63,19 +63,19 @@ const App: React.FC = () => {
           <button className={styles.addButton} onClick={() => setShowForm(true)}>+ Add Task</button>
         <div className={styles.topBar}>
           <div className={styles.filterGrid}>
-            <SearchBar value={searchTerm} onChange={setSearchTerm} />
-            <select value={status} onChange={e => setStatus(e.target.value as TaskStatus | 'all' | 'overdue')} className={styles.select}>
+            <SearchBar value={searchTerm} onChange={setSearchTerm} className={styles.filterField} />
+            <select value={status} onChange={e => setStatus(e.target.value as TaskStatus | 'all' | 'overdue')} className={`${styles.select} ${styles.filterField}`}>
               {statusOptions.map(opt => (
                 <option key={opt.value} value={opt.value}>{opt.label}</option>
               ))}
             </select>
-            </div>
             <div className={styles.dateRangeWrapper}>
               <div className={styles.dateRangeFlex}>
-                <input placeholder='' type="date" value={from} onChange={e => setFrom(e.target.value)} className={styles.dateInput} />
+                <input placeholder='' type="date" value={from} onChange={e => setFrom(e.target.value)} className={`${styles.dateInput} ${styles.filterField}`} />
                 <span className={styles.dateRangeTo}>to</span>
-                <input type="date" value={to} onChange={e => setTo(e.target.value)} className={styles.dateInput} />
+                <input type="date" value={to} onChange={e => setTo(e.target.value)} className={`${styles.dateInput} ${styles.filterField}`} />
               </div>
+            </div>
           </div>
         
         </div>
