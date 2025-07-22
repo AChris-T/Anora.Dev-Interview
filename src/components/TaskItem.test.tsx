@@ -1,7 +1,7 @@
-import React from 'react';
+/// <reference types="@testing-library/jest-dom" />
 import { render, screen, fireEvent } from '@testing-library/react';
 import TaskItem from './TaskItem';
-import { Task } from '../types/Task';
+import type { Task } from '../types/Task';
 
 describe('TaskItem', () => {
   const task: Task = {
