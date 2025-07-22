@@ -19,8 +19,8 @@ export default function ThemeToggle() {
     <button
       onClick={() => setDarkMode((d) => !d)}
       style={{
-        padding: '0.5rem 1rem',
-        borderRadius: 6,
+        padding: '1rem 1rem',
+        borderRadius: 100,
         border: '1px solid #ccc',
         background: darkMode ? '#222' : '#eee',
         color: darkMode ? '#fff' : '#222',
@@ -29,7 +29,7 @@ export default function ThemeToggle() {
       }}
       aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
     >
-      {darkMode ? '🌞 Light Mode' : '🌙 Dark Mode'}
+      {darkMode ? '🌞 ' : '🌙'}
     </button>
   );
 }
