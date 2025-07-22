@@ -1,0 +1,28 @@
+/* src/index.css */
+
+:root {
+  --bg: #f5f7fa;
+  --card-bg: #ffffff;
+  --text: #1f2937;
+  --accent: #3b82f6;
+  --border: #e5e7eb;
+  --completed: #9ca3af;
+}
+
+[data-theme='dark'] {
+  --bg: #111827;
+  --card-bg: #1f2937;
+  --text: #f9fafb;
+  --accent: #60a5fa;
+  --border: #374151;
+  --completed: #6b7280;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}

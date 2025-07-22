@@ -1,0 +1,184 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header h1,
+.header p {
+  word-break: break-word;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.header p {
+  margin-top: 0.3rem;
+  color: var(--completed);
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 0.5rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  background-color: var(--card-bg);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #3264b5; /* very subtle change for light mode */
+}
+
+[data-theme='dark'] button:hover {
+  background-color: #1a1e24; /* very subtle change for dark mode */
+}
+
+.primary {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+}
+.dateRangeWrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+}
+.dateInput {
+  width: 100%;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  gap: 1rem;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.filterGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+.addButton {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+}
+
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.activeTab {
+  background-color: var(--accent);
+  color: white;
+}
+@media (max-width: 700px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .header {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+  }
+  .topBar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+    width: 100%;
+  }
+  .addButton {
+    align-self: flex-start;
+    width: auto;
+    margin-bottom: 0.5rem;
+  }
+  .tabs {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 0.5rem;
+  }
+}
+
+.marginLeftAuto {
+  margin-left: auto;
+}
+
+.select {
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.dateRangeWrapper {
+  width: 100%;
+}
+
+.dateRangeFlex {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+}
+
+.dateInput {
+  padding: 0.5rem;
+  border-radius: 6px;
+  flex: 1;
+}
+
+.dateRangeTo {
+  margin: 0 4px;
+  text-align: center;
+}
