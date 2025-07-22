@@ -4,9 +4,10 @@ type Props = {
   value: string;
   onChange: (val: string) => void;
   style?: React.CSSProperties;
+  className?: string;
 };
 
-export default function SearchBar({ value, onChange, style }: Props) {
+export default function SearchBar({ value, onChange, style, className }: Props) {
   return (
     <input
       type="text"
@@ -14,13 +15,11 @@ export default function SearchBar({ value, onChange, style }: Props) {
       value={value}
       onChange={e => onChange(e.target.value)}
       style={{
-        padding: '0.5rem 1rem',
-        borderRadius: 6,
-        border: '1px solid #ccc',
         fontSize: '1rem',
         marginRight: 12,
         ...style,
       }}
+      className={className}
       aria-label="Search tasks"
     />
   );
