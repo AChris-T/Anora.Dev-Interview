@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const THEME_KEY = 'anora-theme';
 
@@ -19,8 +19,8 @@ export default function ThemeToggle() {
     <button
       onClick={() => setDarkMode((d) => !d)}
       style={{
-        padding: '1rem 1rem',
-        borderRadius: 100,
+        padding: '0.5rem 1rem',
+        borderRadius: 6,
         border: '1px solid #ccc',
         background: darkMode ? '#222' : '#eee',
         color: darkMode ? '#fff' : '#222',
@@ -29,7 +29,7 @@ export default function ThemeToggle() {
       }}
       aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
     >
-      {darkMode ? '🌞' : '🌙'}
+      {darkMode ? '🌞 Light Mode' : '🌙 Dark Mode'}
     </button>
   );
 }
