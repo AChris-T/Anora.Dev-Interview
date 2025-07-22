@@ -80,6 +80,7 @@ button:hover {
 }
 .dateInput {
   width: 100%;
+  height: 44px;
 }
 
 .topBar {
@@ -115,6 +116,17 @@ button:hover {
 .activeTab {
   background-color: var(--accent);
   color: white;
+}
+.select {
+  height: 44px;
+  width: 100%;
+}
+.addButton {
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 @media (max-width: 700px) {
   .container {
@@ -181,21 +193,4 @@ button:hover {
 .dateRangeTo {
   margin: 0 4px;
   text-align: center;
-}
-
-.filterField {
-  min-height: 44px;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
-  box-sizing: border-box;
-}
-
-@media (max-width: 700px) {
-  .filterField {
-    min-height: 40px;
-    font-size: 1rem;
-    padding: 0.5rem 0.75rem;
-  }
 }

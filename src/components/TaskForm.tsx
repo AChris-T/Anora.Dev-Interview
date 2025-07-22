@@ -97,11 +97,11 @@ const TaskForm: React.FC<Props> = ({ onSave, onUpdate, editingTask, clearEditing
       />
 
       <label htmlFor="dueDate">Due Date</label>
-      <input type="date" id="dueDate" {...register('dueDate')} />
+      <input  type="date" id="dueDate" {...register('dueDate')} />
       {errors.dueDate && <span className={styles.error}>{errors.dueDate.message}</span>}
 
       <label htmlFor="priority">Priority</label>
-      <select id="priority" {...register('priority')}>
+      <select  id="priority" {...register('priority')}>
         <option value="">Select priority</option>
         <option value="low">Low</option>
         <option value="medium">Medium</option>
@@ -110,7 +110,7 @@ const TaskForm: React.FC<Props> = ({ onSave, onUpdate, editingTask, clearEditing
       {errors.priority && <span className={styles.error}>{errors.priority.message}</span>}
 
       <label htmlFor="status">Status</label>
-      <select id="status" {...register('status')}>
+      <select   id="status" {...register('status')}>
         <option value="">Select status</option>
         <option value="working">Working</option>
         <option value="inProgress">In Progress</option>

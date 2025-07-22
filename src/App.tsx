@@ -69,14 +69,15 @@ const App: React.FC = () => {
                 <option key={opt.value} value={opt.value}>{opt.label}</option>
               ))}
             </select>
+          </div>
             <div className={styles.dateRangeWrapper}>
-              <div className={styles.dateRangeFlex}>
+            <div className={styles.dateRangeFlex}>
+                <label>Date:</label>
                 <input placeholder='' type="date" value={from} onChange={e => setFrom(e.target.value)} className={`${styles.dateInput} ${styles.filterField}`} />
                 <span className={styles.dateRangeTo}>to</span>
                 <input type="date" value={to} onChange={e => setTo(e.target.value)} className={`${styles.dateInput} ${styles.filterField}`} />
               </div>
             </div>
-          </div>
         
         </div>
        
